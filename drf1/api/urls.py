@@ -19,7 +19,9 @@ from .views  import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',home),
-    path('stu/',post_student)
+    path('stu/',post_student),
+    path('upd/<int:id>/',update_student),
+
 
 
 ]
